@@ -11,6 +11,9 @@ influxpw=os.getenv('INFLUXDB_PW', 'root')
 influxdb=os.getenv('INFLUXDB_DATABASE', 'solar')
 debug=os.getenv('DEBUG', 'False')
 
+def str2bool(v):
+  return v.lower() in ("yes", "true", "t", "1")
+
 if str2bool(debug):
   print("Influxdb Host: " + influxuser + "@" + influxhost + ":" + str(influxport))
   print("Influxdb Password: " + '*'*len(influxpw))
