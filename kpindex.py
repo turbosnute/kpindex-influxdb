@@ -29,11 +29,11 @@ for row in data:
     #print(row)
 
     CurKPindex = [{
-	"measurement": 'planetary_k_index',
-    "time": row['time_tag'],
-    "fields": {
-        "kp_index": row['kp_index']
-    }
+        "measurement": 'planetary_k_index',
+        "time": row['time_tag'],
+        "fields": {
+            "kp_index": row['kp_index']
+        }
     }]
 
     if str2bool(debug):
