@@ -29,7 +29,7 @@ for row in data:
     #print(row)
 
     CurKPindex = [{
-	"measurement": "planetary_k_index",
+	"measurement": row['planetary_k_index'],
     "time": row['time_tag'],
     "fields": {
         "kp_index": row['kp_index']
